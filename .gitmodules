@@ -1,0 +1,3 @@
+[submodule "lib/playitagainsam-js"]
+	path = lib/playitagainsam-js
+	url = git://github.com/rfk/playitagainsam-js.git

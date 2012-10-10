@@ -117,6 +117,21 @@ body {
 }
 
 
-ul li ul li {
-  font-size: 80%;
+.content ul li {
+  padding: 0.1em !important;
+}
+
+pre code {
+  font-size: 20px;
+}
+
+.lefty > p {
+  text-align: left !important;
+}
+
+.content ol, .content ul {
+  font-size: 2em;
+}
+ol ol, ul ul, ol ul, ul ol {
+  font-size: 80% !important;
 }

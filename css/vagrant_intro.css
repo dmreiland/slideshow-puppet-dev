@@ -1,0 +1,54 @@
+
+.vagrant_intro .featured-module {
+  background: url("/file/media/img/vagrant/feat-grad.png") repeat scroll center center transparent;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4) inset;
+  height: 357px;
+  width: 900px;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.vagrant_intro .featured-text {
+    float: left;
+    padding-left: 30px;
+    position: relative;
+    top: 35px;
+    width: 530px;
+}
+
+.vagrant_intro .title {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-shadow: 0 0 10px #014B7E;
+    margin: 0 0 0.5em;
+    text-rendering: optimizelegibility;
+}
+
+.vagrant_intro .subtitle{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 0;
+    color: #002E47;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-shadow: 0 1px 0 #0383B6;
+    text-align: left;
+}
+
+.vagrant_intro #dirty-hippie {
+    background-image: url("/file/media/img/vagrant/hippie.png");
+    float: right;
+    height: 362px;
+    margin-top: 0;
+    position: relative;
+    width: 330px;
+    z-index:99999;
+}

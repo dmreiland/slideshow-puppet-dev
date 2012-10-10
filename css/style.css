@@ -109,3 +109,14 @@ body {
   margin-right: 20px;
   font-weight: bold;
 }
+
+#notesInfo {
+  font-weight: bold;
+  padding-left: 24px;
+  background: transparent url(/file/media/img/notes.png) center left no-repeat;
+}
+
+
+ul li ul li {
+  font-size: 80%;
+}

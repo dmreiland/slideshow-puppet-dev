@@ -4,35 +4,6 @@ body {
   margin-top: 48px;
 }
 
-.hentry:after {
-    -moz-transform: skew(5deg) rotate(5deg);
-    left: auto;
-    right: 12px;
-}
-.hentry:before, .hentry:after {
-    -moz-transform: skew(-5deg) rotate(-5deg);
-    background: none repeat scroll 0 0 transparent;
-    bottom: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    content: " ";
-    height: 10px;
-    left: 12px;
-    position: absolute;
-    width: 40%;
-    z-index: -1;
-}
-.hentry:before, .hentry:after {
-    -moz-transform: skew(-5deg) rotate(-5deg);
-    background: none repeat scroll 0 0 transparent;
-    bottom: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    content: " ";
-    height: 10px;
-    left: 12px;
-    position: absolute;
-    width: 40%;
-    z-index: -1;
-}
 .hentry {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: block;
@@ -45,6 +16,9 @@ body {
     padding: 1.4em;
     position: relative;
     height: 693px;
+}
+.content {
+  margin-top: 0px !important;
 }
 
 .content-wrap {
@@ -121,7 +95,11 @@ body {
   padding: 0.1em !important;
 }
 
-pre code {
+pre {
+  background-color: #eeeeee !important;
+  border: 1px solid black;
+}
+code {
   font-size: 20px;
 }
 
@@ -134,4 +112,15 @@ pre code {
 }
 ol ol, ul ul, ol ul, ul ol {
   font-size: 80% !important;
+}
+
+.content h1 {
+  margin: 0.2em 0;
+}
+.content p {
+  margin: 0.7em;
+}
+
+.slimcode pre {
+  margin: 0.5em 40px;
 }

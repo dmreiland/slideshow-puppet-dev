@@ -20,12 +20,14 @@ install: --no-ri --no-rdoc
 update: --no-ri --no-rdoc
 </pre>
 
-<!SLIDE play_command>
+<!SLIDE>
 
 # Install the gem
 
 <div class="command" id="vagrant_installing_vagrant" style="height: 500px; width: 900px;"></div>
 
-<script>
+<script type="text/javascript">
+<!--
   $("#vagrant_installing_vagrant").pias();
+-->
 </script>

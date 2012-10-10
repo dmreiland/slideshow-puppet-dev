@@ -2,7 +2,7 @@ jQuery.fn.pias = function () {
   this.each(function() {
     var id = $(this).attr("id");
     var player = null
-    $(this).parent('.play_command').bind("showoff:next", function(event) {
+    $(this).parent('.content').bind("showoff:next", function(event) {
       if (player == null) {
         event.preventDefault();
         player = new PIAS.Player("#" + id );

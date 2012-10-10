@@ -1,0 +1,20 @@
+{
+  "name": "slideshow-puppet-dev",
+  "description": "Puppet development using vagrant and git.",
+  "templates": {
+    "default": "templates/default.tpl",
+    "code": "templates/code.tpl"
+  },
+  "sections": [
+    {"section":"src/intro"},
+    {"section":"src/up-tree"},
+    {"section":"src/vagrant"},
+    {"section":"src/up-git-puppet"},
+    {"section":"src/git"},
+    {"section":"src/puppet"}
+  ],
+  "js": ["lib/playitagainsam-js/playitagainsam-js/playitagainsam.js" , "js/*.js" ],
+  "css": ["lib/playitagainsam-js/playitagainsam-js/playitagainsam.css", "css/*.css" ],
+  "page-size": "A4",
+  "author": "Jan Vansteenkiste"
+}

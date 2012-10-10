@@ -7,7 +7,6 @@ jQuery.fn.pias = function () {
         event.preventDefault();
         player = new PIAS.Player("#" + id );
         player.play("file/pias/" + id + ".js");
-        alert(id);
       }
       else if (player.finished == false) {
         event.preventDefault();

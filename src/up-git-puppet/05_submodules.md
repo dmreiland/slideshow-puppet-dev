@@ -1,5 +1,11 @@
 <!SLIDE>
-# Submodules
+# Working in the tree
+
+* Development is mainly in submodules.
+* Always check what branch you are on!
+
+<!SLIDE>
+# Submodules dev cycle.
 
 * Working in a submodule
   * edit, stage (`git add`), `git commit` (and repeat)

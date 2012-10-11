@@ -5,6 +5,7 @@
 * Host only networking.
   * `config.vm.network :hostonly, "192.168.168.2"`
 * Bridged networking.
+  * `config.vm.network :bridged`
 * Port forwarding
   * Access from outside the host only network.
   * `config.vm.forward_port 80, 8080` will allow you to connect to http://localhost:8080

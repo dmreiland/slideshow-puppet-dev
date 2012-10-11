@@ -7,8 +7,8 @@
   },
   "sections": [
     {"section":"src/intro"},
-    {"section":"src/up-tree"},
     {"section":"src/vagrant"},
+    {"section":"src/up-tree"},
     {"section":"src/up-git-puppet"},
     {"section":"src/git"},
     {"section":"src/puppet"}

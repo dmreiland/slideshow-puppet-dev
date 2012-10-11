@@ -61,6 +61,8 @@ included in the commit. You have to re-add the file.
     git add -p <filename>
     # Add a part of the file to the index.
 
+(Demo follows.)
+
 <!SLIDE>
 ## Status
 
@@ -70,18 +72,6 @@ included in the commit. You have to re-add the file.
   $("#git_status").pias();
 </script>
 
-<!SLIDE lefty>
-## Viewing the history
-
-    @@@ sh
-    git log -n 10
-
-### Using an alias:
-<pre style="white-space: pre-wrap;"><code>[alias]
-l = log -n 15 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset%n' --abbrev-commit --date=relative
-</code></pre>
-
-![git-13](img/git-13.png)
 
 <!SLIDE>
 
@@ -107,6 +97,16 @@ l = log -n 15 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C
   $("#git_stage_parts").pias();
 </script>
 
+<!SLIDE lefty>
+## Viewing the history
+
+    @@@ sh
+    git log -n 10
+
+### Using an alias:
+<pre style="white-space: pre-wrap;"><code>[alias]
+l = log -n 15 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset%n' --abbrev-commit --date=relative
+</code></pre>
 <!SLIDE lefty>
 # Undoing changes
 
@@ -158,6 +158,28 @@ Because a commit hash is very difficult to remember and not really useful to wor
     git checkout -b [branch]
     # Create and switch to a new branch.
 
+
+<!SLIDE>
+# Working with remotes
+From the start:
+
+    git clone git@git.tools.be01.uni:users/upjan/private.git
+
+or afterwards:
+
+    git remote add origin git@git.tools.be01.uni:users/upjan/private.git
+
+<!SLIDE>
+## Pulling and pushing
+
+    git push origin master
+
+or
+
+    @@@ sh
+    git push -u origin master
+    # --set-upstream (link local to remote repo for future pulls)
+
 <!SLIDE>
 ## Using remote branches
 
@@ -170,6 +192,23 @@ Because a commit hash is very difficult to remember and not really useful to wor
     # We end up in 'detached HEAD'
     git checkout -b develop
     # Create new branch on current rev.
+
+
+<!SLIDE>
+# Tags
+
+    @@@ sh
+    git tag NAME
+    # creates a name on the current HEAD
+
+    git push --tags
+    # sync tags to remote repository
+
+    git fetch --tags
+    # get tags from remote repository.
+
+    git tag
+    # gives a list of all tags
 
 <!SLIDE lefty>
 # Merging
@@ -247,26 +286,6 @@ After modifying your index again:
 ![git-08](img/git-08.png)
 
 
-<!SLIDE>
-# Working with remotes
-From the start:
-
-    git clone git@git.tools.be01.uni:users/upjan/private.git
-
-or afterwards:
-
-    git remote add origin git@git.tools.be01.uni:users/upjan/private.git
-
-<!SLIDE>
-## Pulling and pushing
-
-    git push origin master
-
-or
-
-    @@@ sh
-    git push -u origin master
-    # --set-upstream (link local to remote repo for future pulls)
 
 <!SLIDE lefty>
 
